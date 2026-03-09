@@ -6,8 +6,13 @@
   font-display: swap;
 }
 
+@font-face {
+    font-family: 'sys_warning2';
+    src: url('/fonts/DTM-Mono.otf') format('opentype');
+}
+
 h1 {
-    font-family: 'SYS_WARNING', Helvetica, sans-serif, Arial;
+    font-family: 'sys_warning2', Helvetica, sans-serif, Arial;
     max-width: 75ch;
     text-align: center;
     font-size: 1.5rem;
