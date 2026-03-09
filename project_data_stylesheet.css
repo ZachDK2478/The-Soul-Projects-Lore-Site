@@ -33,8 +33,10 @@ h1 {
 }
 
 #error {
-    font-family: 'system', Helvetica, sans-serif, Arial;
     color: red;
+    display: none;
+    margin-top: 15px;
+    font-family: 'system', Helvetica, sans-serif, Arial;
 }
 
 input {
