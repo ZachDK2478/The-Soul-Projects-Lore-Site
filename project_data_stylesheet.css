@@ -21,11 +21,13 @@ h1 {
 }
 
 .sys_password {
+    font-family: 'system', Helvetica, sans-serif, Arial;
     display: flex;
     justify-content: center;
 }
 
 #error {
+    font-family: 'system', Helvetica, sans-serif, Arial;
     color: red;
     box-shadow: 0 0 10px 4px red;
     border-radius: 5px;
