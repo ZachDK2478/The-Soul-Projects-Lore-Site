@@ -11,29 +11,30 @@
         <h1>INPUT PASSWORD.</h1>
     </div>
 
-    <input type="password" id="passwordBox" placeholder="Password">
-    <button onclick="checkPassword()">Enter</button>
+    <div class="sys_password">
+        <input type="password" id="passwordBox" placeholder="Password">
+        <button onclick="checkPassword()">PROCEED</button>
 
-    <p id="error">Incorrect password.</p>
-
+        <p id="error">INSUFFICIENT.</p>
+    </div>
     <script>
-    function checkPassword() {
+        function checkPassword() {
 
-        const correctPassword = "HOME";
-        const input = document.getElementById("passwordBox").value;
+            const correctPassword = "HOME";
+            const input = document.getElementById("passwordBox").value;
 
-        if (input === correctPassword) {
-            window.location.href = "real_index.html";
-        } else {
-            const error = document.getElementById("error");
-            error.style.display = "block";
+            if (input === correctPassword) {
+                window.location.href = "real_index.html";
+            } else {
+                const error = document.getElementById("error");
+                error.style.display = "block";
 
-            setTimeout(() => {
-                error.style.display = "none";
-            }, 2000);
+                setTimeout(() => {
+                    error.style.display = "none";
+                }, 2000);
+            }
+
         }
-
-    }
     </script>
 </body>
 </html>

@@ -19,3 +19,27 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+.sys_password {
+    display: flex;
+    justify-content: center;
+}
+
+#error {
+    color: red;
+    box-shadow: 0 0 10px 4px red;
+    border-radius: 5px;
+}
+
+input {
+    padding: 10px 16px;
+    font-size: 16px;
+    margin-left: 5px;
+    font-family: 'system', Helvetica, sans-serif, Arial;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 16px;
+    margin-left: 5px;
+}
