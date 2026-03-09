@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Files | The Artificial Humans Initiative</title>
+    <title>INPUT PASSWORD.</title>
     <link rel="stylesheet" href="project_data_stylesheet.css">
 </head>
 <body>
     <div class="sys_warning">
-        <h1>WARNING: THIS IS CLASSIFIED MATERIAL. UNAUTHORIZED VIEWING OF THIS MATERIAL WILL BE LOGGED, AND DEALT WITH 
-            THOROUGHLY. YOU HAVE BEEN WARNED.
-        </h1>
+        <h1>INPUT PASSWORD.</h1>
     </div>
+
+    <input type="password" id="passwordBox" placeholder="Password">
+    <button onclick="checkPassword()">Enter</button>
+
+    <p id="error">Incorrect password.</p>
+
+    <script>
+    function checkPassword() {
+
+        const correctPassword = "HOME";
+        const input = document.getElementById("passwordBox").value;
+
+        if (input === correctPassword) {
+            window.location.href = "real_index.html";
+        } else {
+            const error = document.getElementById("error");
+            error.style.display = "block";
+
+            setTimeout(() => {
+                error.style.display = "none";
+            }, 2000);
+        }
+
+    }
+    </script>
 </body>
 </html>
 
