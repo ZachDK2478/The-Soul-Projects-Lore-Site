@@ -22,6 +22,12 @@ h1 {
 
 .sys_password {
     font-family: 'system', Helvetica, sans-serif, Arial;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.sys_error {
     display: flex;
     justify-content: center;
 }
@@ -29,8 +35,6 @@ h1 {
 #error {
     font-family: 'system', Helvetica, sans-serif, Arial;
     color: red;
-    box-shadow: 0 0 10px 4px rgb(156, 0, 0);
-    border-radius: 5px;
 }
 
 input {
