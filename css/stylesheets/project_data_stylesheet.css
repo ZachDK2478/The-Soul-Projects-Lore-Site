@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'system';
+    src: url('fonts/8bitoperator_jve.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'system', Helvetica, sans-serif, Arial;
+    max-width: 75ch;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sys_warning {
+    display: flex;
+    justify-content: center;
+}
