@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'system';
-    src: url('fonts/8bitoperator_jve.ttf') format('truetype');
+    src: url('/fonts/DTM-Mono.otf') format('opentype');
 }
 
 h1 {
