@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'system';
-    src: url('fonts/8bitoperator_jve.ttf') format('truetype');
+    src: url('fonts/8bitoperator-jve.ttf') format('truetype');
 }
 
 body {
@@ -20,11 +20,10 @@ h1 {
 }
 
 p {
-    font-family: 'system', Helvetica, sans-serif, Arial;
+    color: white;
     max-width: 75ch;
     text-align: center;
     font-size: 1.2rem;
-    color: white;
 }
 
 .sys_warning {
@@ -71,8 +70,11 @@ button {
 }
 
 .fade-in1 {
+    font-family: 'system';
     animation-name: fadeIn;
     animation-duration: 1s; 
     animation-fill-mode: forwards;
     opacity: 0;
+    display: flex;
+    justify-content: center;
 }
