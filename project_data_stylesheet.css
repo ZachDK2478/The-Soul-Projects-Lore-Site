@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'system';
+    font-family: 'system_mono';
     src: url('fonts/DTM-Mono.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'system';
+    src: url('fonts/8bitoperator_jve.ttf') format('truetype');
 }
 
 body {
@@ -8,10 +13,18 @@ body {
 }
 
 h1 {
-    font-family: 'system', Helvetica, sans-serif, Arial;
+    font-family: 'system_mono', Helvetica, sans-serif, Arial;
     max-width: 50ch;
     text-align: center;
     font-size: 1.5rem;
+}
+
+p {
+    font-family: 'system', Helvetica, sans-serif, Arial;
+    max-width: 75ch;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .sys_warning {
@@ -50,4 +63,16 @@ button {
     padding: 10px 16px;
     font-size: 16px;
     margin-left: 5px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in1 {
+    animation-name: fadeIn;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
